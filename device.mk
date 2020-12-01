@@ -649,9 +649,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.debug.ash.logger.time=0
 endif
 
-# Setup Dalvik VM configurations
-$(call inherit-product, vendor/extras/configs/phone-xhdpi-4096-dalvik-heap.mk)
-
 PRODUCT_COPY_FILES += \
     device/google/bonito/fstab.hardware:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.$(PRODUCT_PLATFORM) \
     device/google/bonito/fstab.hardware:$(TARGET_COPY_OUT_RECOVERY)/root/first_stage_ramdisk/fstab.$(PRODUCT_PLATFORM) \
